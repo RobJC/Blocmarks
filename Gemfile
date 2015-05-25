@@ -48,3 +48,9 @@ gem 'spring',        group: :development
 
 # Bootstrap for styling
 gem 'bootstrap-sass'
+
+# Devise for user authentication
+gem 'devise'
+
+# Figaro for handling sensitive data with environment variables
+gem 'figaro', '1.0'
