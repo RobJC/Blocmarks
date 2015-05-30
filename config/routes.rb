@@ -1,8 +1,11 @@
 Rails.application.routes.draw do
 
+  get 'about' => 'welcome#about'
+  
+  post :incoming, to: 'incoming#create'
 
   devise_for :users
-  get 'about' => 'welcome#about'
+  
   
   root to: 'welcome#index'
   
