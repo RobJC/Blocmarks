@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
 
+  resources :topics
+
   get 'about' => 'welcome#about'
   
   post :incoming, to: 'incoming#create'
