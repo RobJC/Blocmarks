@@ -5,6 +5,7 @@ class TopicsController < ApplicationController
 
   def show
     @topic = Topic.find(params[:id])
+    @bookmarks = @topic.bookmarks
   end
 
   def new
@@ -53,7 +54,7 @@ class TopicsController < ApplicationController
   private
   
   def topic_params
-    params.require(:topic).permit(:title)
+    params.require(:topic).permit(:title, :description)
   end
   
 end
