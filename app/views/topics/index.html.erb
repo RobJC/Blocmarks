@@ -1,17 +1,19 @@
 <h1>All Topics</h1>
 
-<%= link_to "New Topic", new_topic_path, class: 'btn btn-success' %>
+<% if policy(Topic.new).create? %>
+  <%= link_to "New Topic", new_topic_path, class: 'btn btn-success' %>
+<% end %>
 
 <div class="row">
-    <div class="col-md-8">
-        <% @topics.each do |topic| %>
-            <div class="media">
-                <div class="media-body">
-                    <h3 class="media-heading">
-                        <%= link_to topic.title, topic %>
-                    </h3>
-                </div>
-            </div>
-        <% end %>
-    </div>
+  <div class="col-md-8">
+    <% @topics.each do |topic| %>
+      <div class="media">
+        <div class="media-body">
+          <h3 class="media-heading">
+            <%= link_to topic.title, topic %>
+          </h3>
+        </div>
+      </div>
+    <% end %>
+  </div>
 </div>

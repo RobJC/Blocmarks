@@ -57,3 +57,6 @@ gem 'figaro', '1.0'
 
 # Embedly for link previews
 gem 'embedly'
+
+# Pundit for authorization
+gem 'pundit'
