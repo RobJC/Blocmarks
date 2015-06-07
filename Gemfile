@@ -54,3 +54,6 @@ gem 'devise'
 
 # Figaro for handling sensitive data with environment variables
 gem 'figaro', '1.0'
+
+# Embedly for link previews
+gem 'embedly'

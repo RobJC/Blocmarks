@@ -50,6 +50,10 @@ GEM
       responders
       thread_safe (~> 0.1)
       warden (~> 1.2.3)
+    embedly (1.9.1)
+      json
+      oauth
+      querystring
     erubis (2.7.0)
     execjs (2.5.2)
     figaro (1.0.0)
@@ -68,8 +72,10 @@ GEM
     mime-types (2.4.3)
     minitest (5.6.0)
     multi_json (1.11.0)
+    oauth (0.4.7)
     orm_adapter (0.5.0)
     pg (0.18.2)
+    querystring (0.1.0)
     rack (1.5.2)
     rack-test (0.6.3)
       rack (>= 1.0)
@@ -138,6 +144,7 @@ DEPENDENCIES
   bootstrap-sass
   coffee-rails (~> 4.0.0)
   devise
+  embedly
   figaro (= 1.0)
   jbuilder (~> 2.0)
   jquery-rails
