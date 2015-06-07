@@ -7,5 +7,17 @@ class TopicPolicy < ApplicationPolicy
   def destroy?
     false
   end
+  
+  def update?
+    user.present?
+  end
+  
+  def edit?
+    update?
+  end
+  
+  def destroy?
+    update?
+  end
 
 end
