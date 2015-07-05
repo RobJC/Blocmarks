@@ -16,3 +16,11 @@
     <%= render partial: 'topics/bookmarks/bookmark', collection: @bookmarks %>
   </div>
 </div>
+<script src="//cdn.embedly.com/widgets/platform.js"></script>
+<script>
+  $(document).ready(function(){
+    $('p a').embedly({
+      key: 'd9e7b93109ee471db6add0faa74e25c9'
+    });
+  })
+</script>

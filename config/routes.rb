@@ -3,6 +3,10 @@ Rails.application.routes.draw do
   resources :topics do
     resources :bookmarks, except: [:index]
   end
+  
+  resources :bookmarks, only: [:index] do
+    resources :likes, only: [:create, :destroy]
+  end
 
   get 'about' => 'welcome#about'
   
