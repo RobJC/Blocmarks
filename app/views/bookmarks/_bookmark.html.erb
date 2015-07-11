@@ -1,0 +1,11 @@
+<div class="media-body">
+  <h4 class="media-heading">
+    
+    <p><a class="embedly-card" href=<%= bookmark.url %> data-card-theme="dark"></a> </p>
+  </h4>
+  <small>
+    submitted <%= time_ago_in_words(bookmark.created_at) %> ago by 
+    <%= bookmark.user.name %><br/>
+  </small>
+  <%= render partial: 'likes/like', locals: { bookmark: bookmark } %>
+</div>
