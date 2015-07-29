@@ -1,7 +1,5 @@
 Rails.application.routes.draw do
 
-  get 'users/show'
-
   resources :topics do
     resources :bookmarks, except: [:index]
   end
