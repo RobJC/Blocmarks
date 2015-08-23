@@ -17,3 +17,5 @@
 
 # Ignore application configuration
 /config/application.yml
+
+/sping/1336f487ac36a9315a3ec2f6aaf705dc.pid
